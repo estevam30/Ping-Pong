@@ -20,10 +20,21 @@ let yRaqueteOponente = 150;
 let meusPontos = 0;
 let pontosOponentes = 0;
 
-function setup(){
-  createCanvas(600,400)
-}
+function setup (){
+  createCanvas (600,400)()
+  trilha.play()}
 
-function draw (){
-  
 }
+function movimentoBolinha(){
+  
+  circle(xBolinha, yBolinha, diamante);
+  
+  xBolinha += velocidadeXbolhinha;
+  yBolinha += velocidadeYbolinha;
+  if(xBolinha + raio > width || xBolinha -raio < 0){
+   velocidadeYBolinha *= -1;
+  }
+  if(yBolinha + raio > height || yBolinha-raio < 0){
+    velocidadeYBolinha *= -1}}
+
+function raquete
